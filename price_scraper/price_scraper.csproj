@@ -14,4 +14,8 @@
     <PackageReference Include="PuppeteerSharp" Version="10.1.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Core\Excel\" />
+  </ItemGroup>
+
 </Project>

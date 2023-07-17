@@ -8,20 +8,23 @@ namespace price_scraper.Core
 {
     public class Product
     {
-        public string QueriedName { get; private set; }
-        public string TmeName { get; private set; }
-        public string OriginalName { get; private set; }
-        public string Description { get; private set; }
-        public string PriceData { get; private set; }
-        public int Stock { get; private set; }
+        public string QueriedName { get; }
+        public string TmeName { get; }
+        public string OriginalName { get; }
+        public string Description { get; }
+        public string PriceData { get; }
+        public int Stock { get; }
+        public string QuantityType { get; }
 
-        public Product(string queriedName, string tmeName, string originalName, string description, string priceData)
+        public Product(string queriedName, string tmeName, string originalName, string description, string priceData, int stock, string qType)
         {
             QueriedName = queriedName;
             TmeName = tmeName;
             OriginalName = originalName;
             Description = description;
             PriceData = priceData;
+            Stock = stock;
+            QuantityType = qType;
         }
     }
 }
